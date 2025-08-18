@@ -1,0 +1,360 @@
+---
+title: "CIRCULOS_2025"
+author: "Biviana Marcela Suárez Sierra"
+---
+
+**Círculos Matemáticos** son sesiones divertidas y colaborativas de resolución de problemas, dirigidas por tutores expertos, que ayudan a los estudiantes de secundaria a descubrir su pasión por las matemáticas.  
+
+Más allá de la clase tradicional, exploran temas avanzados y emocionantes que abren nuevas perspectivas — conoce más en [circulodematematicaslt.com](https://circulodematematicaslt.com/).
+
+Agradezco a mi amiga Maria Amelia [mariaameliasalazar](https://sites.google.com/site/mariaameliasalazar/home) por su invitación a participar en esta linda e interesante iniciativa.
+
+## Introducción
+
+Estas actividades están inspiradas en la propuesta del libro Azar y probabilidad (Editorial Síntesis), el cual presenta un enfoque didáctico para introducir conceptos fundamentales de probabilidad a partir de situaciones cercanas y manipulativas. Retomando su orientación, se han adaptado experiencias como el uso de bolas numeradas y experimentos aleatorios, con el propósito de favorecer la comprensión de nociones como equiprobabilidad, asignación de valores de probabilidad y comparación de sucesos, promoviendo así un aprendizaje activo y reflexivo en el aula. <https://www.sintesis.com/libro/azar-y-probabilidad>.
+
+A medida que vayas avanzando en este taller, te agradezco si me compartes tus respuestas en el siguiente link <https://forms.gle/3a7nZt8cE6jxJbi96>
+
+## SITUACIONES DIDÁCTICAS: Asignación de probabilidades
+
+### A) Bolas numeradas
+
+(1) El profesor te dará unas bolas numeradas del 1 al 5 y una bolsa. Introduce en la bolsa las bolas con los números 1 y 2. Agita las bolas dentro de la bolsa y, sin mirar la bolsa, coge sin reemplazo una bola y mira el número, devuélvela cada vez e introduce nuevamente. Repite esto varias veces. Puedes observar que cada resultado es sacar una bola.
+
+Esto nos hace pensar que, cuando sacamos una bola, nos encontramos en un **experimento aleatorio**.
+
+(2) Ya conoces **la escala de la probabilidad**. Cuando realizamos un experimento aleatorio podemos asignar a cada suceso **un número** de esta escala, comprendido **entre 0 y 1**.
+
+**Dicho número expresa la confianza que tenemos en que ocurra el suceso. Así, asignamos a un suceso seguro el valor 1, esto quiere decir que siempre ocurre, y 0 al suceso imposible**.
+
+a)  ¿Qué valor asignarías a la probabilidad de sacar el número 1 al tomar una bola de tu bolsa con los ojos cerrados?
+b)  ¿Y a la de obtener el número 2?
+
+```{=html}
+<!-- -->
+```
+(3) Introduce ahora en la bolsa la bola numerada con 3, además de las 1 y 2. Extrae una bola con los ojos cerrados.
+
+```{=html}
+<!-- -->
+```
+a)  ¿Cuáles son los posibles resultados que puedes obtener?
+b)  ¿Cuál de estos resultados o sucesos es más probable?
+c)  Asigna un número a la probabilidad de obtener la bola número 3.
+d)  Da un valor a la probabilidad de sacar la bola número 1.
+e)  Asigna un valor a la probabilidad de extraer la bola número 2.
+
+```{=html}
+<!-- -->
+```
+(4) Vacía ahora la bolsa y coloca sólo las bolas 2 y 5. ¿Cuáles son los posibles resultados de tu experimento? Asigna una probabilidad a cada uno de los resultados posibles.
+
+(5) Vacía ahora la bolsa y coloca sólo las bolas 2 y 5. ¿Cuáles son los posibles resultados de tu experimento? Asigna una probabilidad a cada uno de los resultados posibles.
+
+## B) Un turista despistado
+
+(5) El metro de una ciudad consta de dos ramales con un trozo común, como indica el plano siguiente:
+
+Si quieres que aparezcan las letras exactamente como en la figura y **B** marcado visualmente, podemos resaltarlo:
+
+```         
+    C         D
+     \       /
+      \     /
+       \   /
+        \ /
+         B
+         |
+         |
+         A
+```
+
+Figura 2.12
+
+De los trenes que parten de A y pasan por B, la mitad van a C y la otra mitad a D, alternándose de la forma siguiente:
+
+C D C D C D C D C D ...
+
+Cada tren lleva escrito su destino en la puerta de los vagones, para que los viajeros no se confundan.
+
+Un día, sin embargo, un turista despistado que quiere ir a D toma el metro en A sin mirar las indicaciones.
+
+¿Cuál de los siguientes sucesos piensas que es más probable?
+
+el turista llegará a C
+
+el turista llegará a D
+
+El momento de la verdad ha llegado...
+
+Esta línea decidirá a dónde termina nuestro turista despistado. Una sola tirada: ¡que la probabilidad esté de su lado!
+
+```{r}
+destino <- sample(c("C", "D"), size = 1, replace=TRUE)
+destino
+```
+
+Si simularamos las trayectorias de $100000$ despistados, el siguiente sería el resultado.
+
+```{r}
+# Simulación del problema del turista despistado
+
+set.seed(123)  # Para reproducibilidad
+
+# Número de simulaciones (turistas)
+n <- 100000
+
+# Trenes alternando: C, D, C, D...
+# Representamos C como 1 y D como 0
+trenes <- c("C", "D")
+
+# El turista se sube sin mirar
+# Elegimos aleatoriamente tren C o D con igual probabilidad
+elecciones <- sample(trenes, size = n, replace = TRUE)
+
+# Calculamos frecuencias relativas
+prob_C <- mean(elecciones == "C")
+prob_D <- mean(elecciones == "D")
+
+# Mostramos resultados
+cat("Probabilidad estimada de llegar a C:", prob_C, "\n")
+cat("Probabilidad estimada de llegar a D:", prob_D, "\n")
+
+# Visualización
+barplot(
+  height = c(prob_C, prob_D),
+  names.arg = c("Llegar a C", "Llegar a D"),
+  col = c("skyblue", "salmon"),
+  ylim = c(0, 1),
+  main = "Probabilidad estimada de destino del turista"
+)
+
+```
+
+Interpretación del histograma
+
+Chicos, lo que vemos en este histograma es el resultado de simular 100.000 turistas despistados que se suben al metro sin mirar para dónde va. Recuerden que los trenes se alternan: uno va a C, el siguiente va a D, y así todo el tiempo.
+
+En el gráfico aparecen dos barras:
+
+La barra azul claro representa a los que llegaron a C.
+
+La barra roja representa a los que llegaron a D.
+
+Ambas barras tienen prácticamente la misma altura, lo que significa que la probabilidad de llegar a C o a D es casi exactamente la misma: 50% para cada uno. Esto es porque el sistema de trenes está perfectamente equilibrado: sale uno para C, luego uno para D, y así sucesivamente.
+
+En otras palabras, si eres un turista despistado en esta ciudad, tienes la misma posibilidad de terminar en C que en D. Esto es un ejemplo de una distribución uniforme, donde todos los resultados posibles tienen la misma probabilidad.
+
+(6) Supongamos que durante esta semana 100 personas tomaron el tren sin mirar su destino.
+
+a)  ¿Cuántas piensas que llegarán a C, aproximadamente? ¿Y a D?
+b)  ¿Qué valor asignarías a la probabilidad de que el turista llegue a C en el ejemplo anterior?
+
+(7) Si con la letra C representamos el suceso «el turista llega al punto C», la probabilidad de que ocurra la representamos por P(C).
+
+a)  Asigna un valor a la probabilidad de que el turista llegue a D. $P(D) =$
+
+b)  Calcula la suma siguiente: $P(C) + P(D) =$
+
+(8) Cuando una persona toma el metro en la estación **B** sin fijarse, puede acabar en dos destinos diferentes, **C** o **D**.  
+Podemos representar estas elecciones mediante un conjunto: el conjunto de posibles destinos del viajero.  
+Llamaremos **E** a este conjunto:
+
+$$
+E = \{C, D\}
+$$
+
+**Pregunta:** ¿Cuántos elementos tiene este conjunto?
+
+---
+
+## C) Experimentos con dados
+
+(9) Ya has hecho algunos experimentos con dados. Lanzar un dado es un ejemplo de experimento aleatorio.  
+¿Cuántos resultados diferentes puedes obtener?  
+Representa estos resultados formando un conjunto:
+
+$$
+E = 
+$$
+
+**Pregunta:** ¿Cuántos elementos tiene **E**?  
+
+Si lanzas un dado 600 veces, ¿cuántas veces esperas obtener un 3?  
+
+Asigna un número a las siguientes probabilidades:
+
+$$
+P(1) = \quad\quad P(5) = \quad\quad P(2) =
+$$
+
+**Pregunta:** ¿Cuál será el valor de la suma?
+
+$$
+P(1) + P(2) + P(3) + P(4) + P(5) + P(6) =
+$$
+
+---
+
+(10) Al conjunto de resultados posibles de un experimento aleatorio lo llamamos **espacio muestral** y lo representamos por la letra **E**.  
+
+Como el espacio muestral es un conjunto, podemos formar subconjuntos suyos. Así, al lanzar un dado, obtenemos el siguiente espacio muestral:
+
+$$
+E = \{1, 2, 3, 4, 5, 6\}
+$$
+
+Podemos formar subconjuntos suyos, por ejemplo:
+
+$$
+A = \text{«obtener par»} = \{2, 4, 6\}
+$$
+
+**Escribe los elementos de los siguientes subconjuntos de E:**
+
+$$
+B = \text{«número impar»} = \{\ \}
+$$
+
+$$
+C = \text{«número primo»} = \{\ \}
+$$
+
+$$
+D = \text{«número compuesto»} = \{\ \}
+$$
+
+$$
+F = \text{«múltiplo de 3»} = \{\ \}
+$$
+Asigna probabilidades a cada uno de los sucesos **B, C, D, E, F**:
+
+$$
+P(B) =  \quad\quad   P(C) = \quad\quad   P(D) = \quad\quad  P(F) =
+$$
+
+
+---
+
+(11) Observa las siguientes cantidades:
+
+$$
+P(A) = \frac{\text{n.º de elementos de A}}{\text{n.º de elementos de E}}  = ?
+$$
+
+**Pregunta:** ¿Existe alguna relación entre ellas?
+
+---
+
+(12) Observa las siguientes cantidades:
+
+$$
+P(F) = \frac{\text{n.º de elementos de F}}{\text{n.º de elementos de E}}  = ?
+$$
+
+**Pregunta:** ¿Existe alguna relación entre ellas?
+
+```{r}
+# Espacio muestral de un dado perfecto
+E_dado <- 1:6
+length_E_dado <- length(E_dado)
+
+cat("Dado cúbico:\n")
+cat("  E =", paste0("{", paste(E_dado, collapse = ", "), "}"),
+    " | |E| =", length_E_dado, "\n")
+
+# (9) Simulación de 600 lanzamientos y conteo de '3'
+n_lanz <- 600
+lanzamientos <- sample(E_dado, size = n_lanz, replace = TRUE)
+veces_3 <- sum(lanzamientos == 3)
+cat("  En", n_lanz, "lanzamientos, veces que sale 3 =", veces_3, "\n")
+
+# Probabilidades teóricas simples
+P1 <- 1/6; P2 <- 1/6; P5 <- 1/6
+suma_P <- P1 + (1/6) + (1/6) + (1/6) + P5 + (1/6)  # P(1..6)
+cat("  P(1)=", P1, " P(2)=", P2, " P(5)=", P5, " | suma P(1..6) =", suma_P, "\n\n")
+
+## -----------------------------------------------
+## (10) Subconjuntos del espacio muestral del dado
+## -----------------------------------------------
+
+A <- c(2, 4, 6)                       # obtener par (dado)
+B <- setdiff(E_dado, A)               # número impar
+C_ <- c(2, 3, 5)                      # números primos en {1..6}
+D_ <- setdiff(E_dado, c(1, 2, 3, 5))  # compuestos en {1..6} -> {4,6}
+F <- c(3, 6)                          # múltiplos de 3
+
+cat("Subconjuntos:\n")
+cat("  A (par)        =", paste(A, collapse = ", "), "\n")
+cat("  B (impar)      =", paste(B, collapse = ", "), "\n")
+cat("  C (primo)      =", paste(C_, collapse = ", "), "\n")
+cat("  D (compuesto)  =", paste(D_, collapse = ", "), "\n")
+cat("  F (múltiplo 3) =", paste(F, collapse = ", "), "\n\n")
+
+## Probabilidades teóricas de estos sucesos con dado perfecto
+P_A <- length(A)/length_E_dado
+P_B <- length(B)/length_E_dado
+P_C <- length(C_)/length_E_dado
+P_D <- length(D_)/length_E_dado
+P_F <- length(F)/length_E_dado
+
+cat("Probabilidades teóricas (dado perfecto):\n")
+cat("  P(A)=", P_A, " P(B)=", P_B, " P(C)=", P_C, " P(D)=", P_D, " P(F)=", P_F, "\n\n")
+
+## -----------------------------------------------
+## Gráfica opcional: frecuencias de los 600 lanzamientos
+## -----------------------------------------------
+#Descomenta para ver la barra (en RStudio/plots)
+barplot(table(factor(lanzamientos, levels = 1:6)),
+        main = "Frecuencias en 600 lanzamientos de un dado",
+        xlab = "Cara", ylab = "Frecuencia")
+```
+
+---
+
+## D) Dados no cúbicos
+
+(13) Un dado ordinario tiene 6 caras cuadrangulares.  
+
+Al lanzarlo puede caer sobre una cualquiera de sus seis caras; por ello, si está perfectamente construido, asignamos la probabilidad $\frac{1}{6}$ al suceso:
+
+**«Obtener un 1»** (la misma para cualquier cara).
+
+Te sugerimos que construyas un dado de cartón, cuyas caras sean triángulos equiláteros iguales (Fig. 2.13).
+
+![Figura 2.13: Dado tetraédrico y su desarrollo](images/tetraedrico.jpeg)
+
+**a)** Si haces el experimento de lanzar al aire este dado, ¿cuál es el espacio muestral, o conjunto de todos los resultados elementales posibles?
+
+**b)** Si estuviera perfectamente construido, asigna probabilidades a cada uno de los siguientes sucesos:
+
+- «obtener un 3»  
+- «obtener número par»  
+- «obtener impar»  
+- «obtener un 6»  
+
+**c)** Si pegas un botón sobre la cara 2, ¿crees que sería correcto asignar las mismas probabilidades a los sucesos anteriores?
+
+(14) El dodecaedro es un poliedro regular con 12 caras que son pentágonos regulares.  
+Te sugerimos que dibujes en una cartulina 12 pentágonos regulares iguales, los recortes y los pegues con celo de tal modo que formes un dodecaedro.  
+Numera sus caras del 1 al 12.
+
+**a)** Si haces el experimento de lanzar al aire este dado dodecaédrico, ¿cuál es el espacio muestral?
+
+**b)** Considera los siguientes sucesos que pueden ocurrir cuando se realiza el experimento de lanzar el dado de doce caras:
+
+- **A** = «obtener un 8»  
+- **B** = «obtener par»  
+- **C** = «obtener impar»  
+- **D** = «obtener múltiplo de 3»  
+- **E** = «obtener múltiplo de 5»  
+- **F** = «obtener número primo»  
+
+Si estuviera perfectamente construido, asigna probabilidades a cada uno de estos sucesos:
+
+$$
+P(A) = \quad ; \quad P(B) = \quad ; \quad P(C) = \quad ; \quad P(D) = \quad ; \quad P(E) = \quad ; \quad P(F) =
+$$
+
+**c)** Si pegas un botón en una de las caras, ¿crees que sería correcto asignar las mismas probabilidades a esos sucesos?
+
