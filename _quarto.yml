@@ -1,5 +1,17 @@
 project:
-  title: "CIRCULOS_2025"
+  type: website
+  output-dir: docs
 
-editor: visual
+website:
+  title: "CÍRCULOS_2025"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: CIRCULOS_2025.html
+        text: HTML (render local)
 
+format:
+  html:
+    theme: cosmo
+    toc: true

@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Biviana Marcela Suárez Sierra">
+
+<title>CIRCULOS_2025 – CÍRCULOS_2025</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a73acf0fcd4c57e41cbf0299a88f29f1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">CÍRCULOS_2025</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./CIRCULOS_2025.html"> 
+<span class="menu-text">HTML (render local)</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#situaciones-didácticas-asignación-de-probabilidades" id="toc-situaciones-didácticas-asignación-de-probabilidades" class="nav-link" data-scroll-target="#situaciones-didácticas-asignación-de-probabilidades">SITUACIONES DIDÁCTICAS: Asignación de probabilidades</a>
+  <ul class="collapse">
+  <li><a href="#a-bolas-numeradas" id="toc-a-bolas-numeradas" class="nav-link" data-scroll-target="#a-bolas-numeradas">A) Bolas numeradas</a></li>
+  </ul></li>
+  <li><a href="#b-un-turista-despistado" id="toc-b-un-turista-despistado" class="nav-link" data-scroll-target="#b-un-turista-despistado">B) Un turista despistado</a></li>
+  <li><a href="#c-experimentos-con-dados" id="toc-c-experimentos-con-dados" class="nav-link" data-scroll-target="#c-experimentos-con-dados">C) Experimentos con dados</a></li>
+  <li><a href="#d-dados-no-cúbicos" id="toc-d-dados-no-cúbicos" class="nav-link" data-scroll-target="#d-dados-no-cúbicos">D) Dados no cúbicos</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">CIRCULOS_2025</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Biviana Marcela Suárez Sierra </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Círculos Matemáticos</strong> son sesiones divertidas y colaborativas de resolución de problemas, dirigidas por tutores expertos, que ayudan a los estudiantes de secundaria a descubrir su pasión por las matemáticas.</p>
+<p>Más allá de la clase tradicional, exploran temas avanzados y emocionantes que abren nuevas perspectivas — conoce más en <a href="https://circulodematematicaslt.com/">circulodematematicaslt.com</a>.</p>
+<p>Agradezco a mi amiga Maria Amelia <a href="https://sites.google.com/site/mariaameliasalazar/home">mariaameliasalazar</a> por su invitación a participar en esta linda e interesante iniciativa.</p>
+<section id="introducción" class="level2">
+<h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
+<p>Estas actividades están inspiradas en la propuesta del libro Azar y probabilidad (Editorial Síntesis), el cual presenta un enfoque didáctico para introducir conceptos fundamentales de probabilidad a partir de situaciones cercanas y manipulativas. Retomando su orientación, se han adaptado experiencias como el uso de bolas numeradas y experimentos aleatorios, con el propósito de favorecer la comprensión de nociones como equiprobabilidad, asignación de valores de probabilidad y comparación de sucesos, promoviendo así un aprendizaje activo y reflexivo en el aula. <a href="https://www.sintesis.com/libro/azar-y-probabilidad" class="uri">https://www.sintesis.com/libro/azar-y-probabilidad</a>.</p>
+<p>A medida que vayas avanzando en este taller, te agradezco si me compartes tus respuestas en el siguiente link <a href="https://forms.gle/3a7nZt8cE6jxJbi96" class="uri">https://forms.gle/3a7nZt8cE6jxJbi96</a></p>
+</section>
+<section id="situaciones-didácticas-asignación-de-probabilidades" class="level2">
+<h2 class="anchored" data-anchor-id="situaciones-didácticas-asignación-de-probabilidades">SITUACIONES DIDÁCTICAS: Asignación de probabilidades</h2>
+<section id="a-bolas-numeradas" class="level3">
+<h3 class="anchored" data-anchor-id="a-bolas-numeradas">A) Bolas numeradas</h3>
+<ol type="1">
+<li>El profesor te dará unas bolas numeradas del 1 al 5 y una bolsa. Introduce en la bolsa las bolas con los números 1 y 2. Agita las bolas dentro de la bolsa y, sin mirar la bolsa, coge sin reemplazo una bola y mira el número, devuélvela cada vez e introduce nuevamente. Repite esto varias veces. Puedes observar que cada resultado es sacar una bola.</li>
+</ol>
+<p>Esto nos hace pensar que, cuando sacamos una bola, nos encontramos en un <strong>experimento aleatorio</strong>.</p>
+<ol start="2" type="1">
+<li>Ya conoces <strong>la escala de la probabilidad</strong>. Cuando realizamos un experimento aleatorio podemos asignar a cada suceso <strong>un número</strong> de esta escala, comprendido <strong>entre 0 y 1</strong>.</li>
+</ol>
+<p><strong>Dicho número expresa la confianza que tenemos en que ocurra el suceso. Así, asignamos a un suceso seguro el valor 1, esto quiere decir que siempre ocurre, y 0 al suceso imposible</strong>.</p>
+<ol type="a">
+<li>¿Qué valor asignarías a la probabilidad de sacar el número 1 al tomar una bola de tu bolsa con los ojos cerrados?</li>
+<li>¿Y a la de obtener el número 2?</li>
+</ol>
+<!-- -->
+<ol start="3" type="1">
+<li>Introduce ahora en la bolsa la bola numerada con 3, además de las 1 y 2. Extrae una bola con los ojos cerrados.</li>
+</ol>
+<!-- -->
+<ol type="a">
+<li>¿Cuáles son los posibles resultados que puedes obtener?</li>
+<li>¿Cuál de estos resultados o sucesos es más probable?</li>
+<li>Asigna un número a la probabilidad de obtener la bola número 3.</li>
+<li>Da un valor a la probabilidad de sacar la bola número 1.</li>
+<li>Asigna un valor a la probabilidad de extraer la bola número 2.</li>
+</ol>
+<!-- -->
+<ol start="4" type="1">
+<li><p>Vacía ahora la bolsa y coloca sólo las bolas 2 y 5. ¿Cuáles son los posibles resultados de tu experimento? Asigna una probabilidad a cada uno de los resultados posibles.</p></li>
+<li><p>Vacía ahora la bolsa y coloca sólo las bolas 2 y 5. ¿Cuáles son los posibles resultados de tu experimento? Asigna una probabilidad a cada uno de los resultados posibles.</p></li>
+</ol>
+</section>
+</section>
+<section id="b-un-turista-despistado" class="level2">
+<h2 class="anchored" data-anchor-id="b-un-turista-despistado">B) Un turista despistado</h2>
+<ol start="5" type="1">
+<li>El metro de una ciudad consta de dos ramales con un trozo común, como indica el plano siguiente:</li>
+</ol>
+<p>Si quieres que aparezcan las letras exactamente como en la figura y <strong>B</strong> marcado visualmente, podemos resaltarlo:</p>
+<pre><code>    C         D
+     \       /
+      \     /
+       \   /
+        \ /
+         B
+         |
+         |
+         A</code></pre>
+<p>Figura 2.12</p>
+<p>De los trenes que parten de A y pasan por B, la mitad van a C y la otra mitad a D, alternándose de la forma siguiente:</p>
+<p>C D C D C D C D C D …</p>
+<p>Cada tren lleva escrito su destino en la puerta de los vagones, para que los viajeros no se confundan.</p>
+<p>Un día, sin embargo, un turista despistado que quiere ir a D toma el metro en A sin mirar las indicaciones.</p>
+<p>¿Cuál de los siguientes sucesos piensas que es más probable?</p>
+<p>el turista llegará a C</p>
+<p>el turista llegará a D</p>
+<p>El momento de la verdad ha llegado…</p>
+<p>Esta línea decidirá a dónde termina nuestro turista despistado. Una sola tirada: ¡que la probabilidad esté de su lado!</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>destino <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">"C"</span>, <span class="st">"D"</span>), <span class="at">size =</span> <span class="dv">1</span>, <span class="at">replace=</span><span class="cn">TRUE</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>destino</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "D"</code></pre>
+</div>
+</div>
+<p>Si simularamos las trayectorias de <span class="math inline">\(100000\)</span> despistados, el siguiente sería el resultado.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulación del problema del turista despistado</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)  <span class="co"># Para reproducibilidad</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Número de simulaciones (turistas)</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">100000</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Trenes alternando: C, D, C, D...</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Representamos C como 1 y D como 0</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>trenes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"C"</span>, <span class="st">"D"</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># El turista se sube sin mirar</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Elegimos aleatoriamente tren C o D con igual probabilidad</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>elecciones <span class="ot">&lt;-</span> <span class="fu">sample</span>(trenes, <span class="at">size =</span> n, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculamos frecuencias relativas</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>prob_C <span class="ot">&lt;-</span> <span class="fu">mean</span>(elecciones <span class="sc">==</span> <span class="st">"C"</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>prob_D <span class="ot">&lt;-</span> <span class="fu">mean</span>(elecciones <span class="sc">==</span> <span class="st">"D"</span>)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostramos resultados</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Probabilidad estimada de llegar a C:"</span>, prob_C, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Probabilidad estimada de llegar a C: 0.50161 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Probabilidad estimada de llegar a D:"</span>, prob_D, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Probabilidad estimada de llegar a D: 0.49839 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualización</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="fu">c</span>(prob_C, prob_D),</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">names.arg =</span> <span class="fu">c</span>(<span class="st">"Llegar a C"</span>, <span class="st">"Llegar a D"</span>),</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"skyblue"</span>, <span class="st">"salmon"</span>),</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>),</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Probabilidad estimada de destino del turista"</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interpretación del histograma</p>
+<p>Chicos, lo que vemos en este histograma es el resultado de simular 100.000 turistas despistados que se suben al metro sin mirar para dónde va. Recuerden que los trenes se alternan: uno va a C, el siguiente va a D, y así todo el tiempo.</p>
+<p>En el gráfico aparecen dos barras:</p>
+<p>La barra azul claro representa a los que llegaron a C.</p>
+<p>La barra roja representa a los que llegaron a D.</p>
+<p>Ambas barras tienen prácticamente la misma altura, lo que significa que la probabilidad de llegar a C o a D es casi exactamente la misma: 50% para cada uno. Esto es porque el sistema de trenes está perfectamente equilibrado: sale uno para C, luego uno para D, y así sucesivamente.</p>
+<p>En otras palabras, si eres un turista despistado en esta ciudad, tienes la misma posibilidad de terminar en C que en D. Esto es un ejemplo de una distribución uniforme, donde todos los resultados posibles tienen la misma probabilidad.</p>
+<ol start="6" type="1">
+<li>Supongamos que durante esta semana 100 personas tomaron el tren sin mirar su destino.</li>
+</ol>
+<ol type="a">
+<li>¿Cuántas piensas que llegarán a C, aproximadamente? ¿Y a D?</li>
+<li>¿Qué valor asignarías a la probabilidad de que el turista llegue a C en el ejemplo anterior?</li>
+</ol>
+<ol start="7" type="1">
+<li>Si con la letra C representamos el suceso «el turista llega al punto C», la probabilidad de que ocurra la representamos por P(C).</li>
+</ol>
+<ol type="a">
+<li><p>Asigna un valor a la probabilidad de que el turista llegue a D. <span class="math inline">\(P(D) =\)</span></p></li>
+<li><p>Calcula la suma siguiente: <span class="math inline">\(P(C) + P(D) =\)</span></p></li>
+</ol>
+<ol start="8" type="1">
+<li>Cuando una persona toma el metro en la estación <strong>B</strong> sin fijarse, puede acabar en dos destinos diferentes, <strong>C</strong> o <strong>D</strong>.<br>
+Podemos representar estas elecciones mediante un conjunto: el conjunto de posibles destinos del viajero.<br>
+Llamaremos <strong>E</strong> a este conjunto:</li>
+</ol>
+<p><span class="math display">\[
+E = \{C, D\}
+\]</span></p>
+<p><strong>Pregunta:</strong> ¿Cuántos elementos tiene este conjunto?</p>
+<hr>
+</section>
+<section id="c-experimentos-con-dados" class="level2">
+<h2 class="anchored" data-anchor-id="c-experimentos-con-dados">C) Experimentos con dados</h2>
+<ol start="9" type="1">
+<li>Ya has hecho algunos experimentos con dados. Lanzar un dado es un ejemplo de experimento aleatorio.<br>
+¿Cuántos resultados diferentes puedes obtener?<br>
+Representa estos resultados formando un conjunto:</li>
+</ol>
+<p><span class="math display">\[
+E =
+\]</span></p>
+<p><strong>Pregunta:</strong> ¿Cuántos elementos tiene <strong>E</strong>?</p>
+<p>Si lanzas un dado 600 veces, ¿cuántas veces esperas obtener un 3?</p>
+<p>Asigna un número a las siguientes probabilidades:</p>
+<p><span class="math display">\[
+P(1) = \quad\quad P(5) = \quad\quad P(2) =
+\]</span></p>
+<p><strong>Pregunta:</strong> ¿Cuál será el valor de la suma?</p>
+<p><span class="math display">\[
+P(1) + P(2) + P(3) + P(4) + P(5) + P(6) =
+\]</span></p>
+<hr>
+<ol start="10" type="1">
+<li>Al conjunto de resultados posibles de un experimento aleatorio lo llamamos <strong>espacio muestral</strong> y lo representamos por la letra <strong>E</strong>.</li>
+</ol>
+<p>Como el espacio muestral es un conjunto, podemos formar subconjuntos suyos. Así, al lanzar un dado, obtenemos el siguiente espacio muestral:</p>
+<p><span class="math display">\[
+E = \{1, 2, 3, 4, 5, 6\}
+\]</span></p>
+<p>Podemos formar subconjuntos suyos, por ejemplo:</p>
+<p><span class="math display">\[
+A = \text{«obtener par»} = \{2, 4, 6\}
+\]</span></p>
+<p><strong>Escribe los elementos de los siguientes subconjuntos de E:</strong></p>
+<p><span class="math display">\[
+B = \text{«número impar»} = \{\ \}
+\]</span></p>
+<p><span class="math display">\[
+C = \text{«número primo»} = \{\ \}
+\]</span></p>
+<p><span class="math display">\[
+D = \text{«número compuesto»} = \{\ \}
+\]</span></p>
+<p><span class="math display">\[
+F = \text{«múltiplo de 3»} = \{\ \}
+\]</span> Asigna probabilidades a cada uno de los sucesos <strong>B, C, D, E, F</strong>:</p>
+<p><span class="math display">\[
+P(B) =  \quad\quad   P(C) = \quad\quad   P(D) = \quad\quad  P(F) =
+\]</span></p>
+<hr>
+<ol start="11" type="1">
+<li>Observa las siguientes cantidades:</li>
+</ol>
+<p><span class="math display">\[
+P(A) = \frac{\text{n.º de elementos de A}}{\text{n.º de elementos de E}}  = ?
+\]</span></p>
+<p><strong>Pregunta:</strong> ¿Existe alguna relación entre ellas?</p>
+<hr>
+<ol start="12" type="1">
+<li>Observa las siguientes cantidades:</li>
+</ol>
+<p><span class="math display">\[
+P(F) = \frac{\text{n.º de elementos de F}}{\text{n.º de elementos de E}}  = ?
+\]</span></p>
+<p><strong>Pregunta:</strong> ¿Existe alguna relación entre ellas?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Espacio muestral de un dado perfecto</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>E_dado <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>length_E_dado <span class="ot">&lt;-</span> <span class="fu">length</span>(E_dado)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Dado cúbico:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Dado cúbico:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  E ="</span>, <span class="fu">paste0</span>(<span class="st">"{"</span>, <span class="fu">paste</span>(E_dado, <span class="at">collapse =</span> <span class="st">", "</span>), <span class="st">"}"</span>),</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">" | |E| ="</span>, length_E_dado, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  E = {1, 2, 3, 4, 5, 6}  | |E| = 6 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (9) Simulación de 600 lanzamientos y conteo de '3'</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>n_lanz <span class="ot">&lt;-</span> <span class="dv">600</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>lanzamientos <span class="ot">&lt;-</span> <span class="fu">sample</span>(E_dado, <span class="at">size =</span> n_lanz, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>veces_3 <span class="ot">&lt;-</span> <span class="fu">sum</span>(lanzamientos <span class="sc">==</span> <span class="dv">3</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  En"</span>, n_lanz, <span class="st">"lanzamientos, veces que sale 3 ="</span>, veces_3, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  En 600 lanzamientos, veces que sale 3 = 89 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Probabilidades teóricas simples</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>P1 <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">/</span><span class="dv">6</span>; P2 <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">/</span><span class="dv">6</span>; P5 <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">/</span><span class="dv">6</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>suma_P <span class="ot">&lt;-</span> P1 <span class="sc">+</span> (<span class="dv">1</span><span class="sc">/</span><span class="dv">6</span>) <span class="sc">+</span> (<span class="dv">1</span><span class="sc">/</span><span class="dv">6</span>) <span class="sc">+</span> (<span class="dv">1</span><span class="sc">/</span><span class="dv">6</span>) <span class="sc">+</span> P5 <span class="sc">+</span> (<span class="dv">1</span><span class="sc">/</span><span class="dv">6</span>)  <span class="co"># P(1..6)</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  P(1)="</span>, P1, <span class="st">" P(2)="</span>, P2, <span class="st">" P(5)="</span>, P5, <span class="st">" | suma P(1..6) ="</span>, suma_P, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  P(1)= 0.1666667  P(2)= 0.1666667  P(5)= 0.1666667  | suma P(1..6) = 1 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="do">## -----------------------------------------------</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="do">## (10) Subconjuntos del espacio muestral del dado</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="do">## -----------------------------------------------</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>)                       <span class="co"># obtener par (dado)</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(E_dado, A)               <span class="co"># número impar</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>C_ <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>)                      <span class="co"># números primos en {1..6}</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>D_ <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(E_dado, <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>))  <span class="co"># compuestos en {1..6} -&gt; {4,6}</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>F <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">6</span>)                          <span class="co"># múltiplos de 3</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Subconjuntos:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Subconjuntos:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  A (par)        ="</span>, <span class="fu">paste</span>(A, <span class="at">collapse =</span> <span class="st">", "</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  A (par)        = 2, 4, 6 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  B (impar)      ="</span>, <span class="fu">paste</span>(B, <span class="at">collapse =</span> <span class="st">", "</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  B (impar)      = 1, 3, 5 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  C (primo)      ="</span>, <span class="fu">paste</span>(C_, <span class="at">collapse =</span> <span class="st">", "</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  C (primo)      = 2, 3, 5 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  D (compuesto)  ="</span>, <span class="fu">paste</span>(D_, <span class="at">collapse =</span> <span class="st">", "</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  D (compuesto)  = 4, 6 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  F (múltiplo 3) ="</span>, <span class="fu">paste</span>(F, <span class="at">collapse =</span> <span class="st">", "</span>), <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  F (múltiplo 3) = 3, 6 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Probabilidades teóricas de estos sucesos con dado perfecto</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>P_A <span class="ot">&lt;-</span> <span class="fu">length</span>(A)<span class="sc">/</span>length_E_dado</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>P_B <span class="ot">&lt;-</span> <span class="fu">length</span>(B)<span class="sc">/</span>length_E_dado</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>P_C <span class="ot">&lt;-</span> <span class="fu">length</span>(C_)<span class="sc">/</span>length_E_dado</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>P_D <span class="ot">&lt;-</span> <span class="fu">length</span>(D_)<span class="sc">/</span>length_E_dado</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>P_F <span class="ot">&lt;-</span> <span class="fu">length</span>(F)<span class="sc">/</span>length_E_dado</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Probabilidades teóricas (dado perfecto):</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Probabilidades teóricas (dado perfecto):</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"  P(A)="</span>, P_A, <span class="st">" P(B)="</span>, P_B, <span class="st">" P(C)="</span>, P_C, <span class="st">" P(D)="</span>, P_D, <span class="st">" P(F)="</span>, P_F, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  P(A)= 0.5  P(B)= 0.5  P(C)= 0.5  P(D)= 0.3333333  P(F)= 0.3333333 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="do">## -----------------------------------------------</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Gráfica opcional: frecuencias de los 600 lanzamientos</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="do">## -----------------------------------------------</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Descomenta para ver la barra (en RStudio/plots)</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(<span class="fu">table</span>(<span class="fu">factor</span>(lanzamientos, <span class="at">levels =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)),</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">main =</span> <span class="st">"Frecuencias en 600 lanzamientos de un dado"</span>,</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">"Cara"</span>, <span class="at">ylab =</span> <span class="st">"Frecuencia"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="d-dados-no-cúbicos" class="level2">
+<h2 class="anchored" data-anchor-id="d-dados-no-cúbicos">D) Dados no cúbicos</h2>
+<ol start="13" type="1">
+<li>Un dado ordinario tiene 6 caras cuadrangulares.</li>
+</ol>
+<p>Al lanzarlo puede caer sobre una cualquiera de sus seis caras; por ello, si está perfectamente construido, asignamos la probabilidad <span class="math inline">\(\frac{1}{6}\)</span> al suceso:</p>
+<p><strong>«Obtener un 1»</strong> (la misma para cualquier cara).</p>
+<p>Te sugerimos que construyas un dado de cartón, cuyas caras sean triángulos equiláteros iguales (Fig. 2.13).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/tetraedrico.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Figura 2.13: Dado tetraédrico y su desarrollo</figcaption>
+</figure>
+</div>
+<p><strong>a)</strong> Si haces el experimento de lanzar al aire este dado, ¿cuál es el espacio muestral, o conjunto de todos los resultados elementales posibles?</p>
+<p><strong>b)</strong> Si estuviera perfectamente construido, asigna probabilidades a cada uno de los siguientes sucesos:</p>
+<ul>
+<li>«obtener un 3»<br>
+</li>
+<li>«obtener número par»<br>
+</li>
+<li>«obtener impar»<br>
+</li>
+<li>«obtener un 6»</li>
+</ul>
+<p><strong>c)</strong> Si pegas un botón sobre la cara 2, ¿crees que sería correcto asignar las mismas probabilidades a los sucesos anteriores?</p>
+<ol start="14" type="1">
+<li>El dodecaedro es un poliedro regular con 12 caras que son pentágonos regulares.<br>
+Te sugerimos que dibujes en una cartulina 12 pentágonos regulares iguales, los recortes y los pegues con celo de tal modo que formes un dodecaedro.<br>
+Numera sus caras del 1 al 12.</li>
+</ol>
+<p><strong>a)</strong> Si haces el experimento de lanzar al aire este dado dodecaédrico, ¿cuál es el espacio muestral?</p>
+<p><strong>b)</strong> Considera los siguientes sucesos que pueden ocurrir cuando se realiza el experimento de lanzar el dado de doce caras:</p>
+<ul>
+<li><strong>A</strong> = «obtener un 8»<br>
+</li>
+<li><strong>B</strong> = «obtener par»<br>
+</li>
+<li><strong>C</strong> = «obtener impar»<br>
+</li>
+<li><strong>D</strong> = «obtener múltiplo de 3»<br>
+</li>
+<li><strong>E</strong> = «obtener múltiplo de 5»<br>
+</li>
+<li><strong>F</strong> = «obtener número primo»</li>
+</ul>
+<p>Si estuviera perfectamente construido, asigna probabilidades a cada uno de estos sucesos:</p>
+<p><span class="math display">\[
+P(A) = \quad ; \quad P(B) = \quad ; \quad P(C) = \quad ; \quad P(D) = \quad ; \quad P(E) = \quad ; \quad P(F) =
+\]</span></p>
+<p><strong>c)</strong> Si pegas un botón en una de las caras, ¿crees que sería correcto asignar las mismas probabilidades a esos sucesos?</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
