@@ -17,7 +17,7 @@ A medida que vayas avanzando en este taller, te agradezco si me compartes tus re
 
 ## SITUACIONES DIDÁCTICAS: Asignación de probabilidades
 
-### A) Bolas numeradas
+## A) Bolas numeradas
 
 (1) El profesor te dará unas bolas numeradas del 1 al 5 y una bolsa. Introduce en la bolsa las bolas con los números 1 y 2. Agita las bolas dentro de la bolsa y, sin mirar la bolsa, coge sin reemplazo una bola y mira el número, devuélvela cada vez e introduce nuevamente. Repite esto varias veces. Puedes observar que cada resultado es sacar una bola.
 
@@ -49,13 +49,12 @@ e)  Asigna un valor a la probabilidad de extraer la bola número 2.
 ```
 (4) Vacía ahora la bolsa y coloca sólo las bolas 2 y 5. ¿Cuáles son los posibles resultados de tu experimento? Asigna una probabilidad a cada uno de los resultados posibles.
 
-(5) Vacía ahora la bolsa y coloca sólo las bolas 2 y 5. ¿Cuáles son los posibles resultados de tu experimento? Asigna una probabilidad a cada uno de los resultados posibles.
 
 ## B) Un turista despistado
 
 (5) El metro de una ciudad consta de dos ramales con un trozo común, como indica el plano siguiente:
 
-Si quieres que aparezcan las letras exactamente como en la figura y **B** marcado visualmente, podemos resaltarlo:
+
 
 ```         
     C         D
